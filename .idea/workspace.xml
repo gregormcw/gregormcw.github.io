@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea9f70e5-3ada-4a25-a998-dadf0ce4699d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Gregor McWilliam Web Resume - Dec 2020.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Gregor McWilliam Website Resume - October 2021.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,10 @@
       <workItem from="1623381399452" duration="221000" />
       <workItem from="1623951922279" duration="584000" />
       <workItem from="1633445442943" duration="1431000" />
-      <workItem from="1636047339107" duration="333000" />
+      <workItem from="1636047339107" duration="1053000" />
+      <workItem from="1636048409675" duration="73000" />
+      <workItem from="1636048508918" duration="67000" />
+      <workItem from="1636048701132" duration="33000" />
     </task>
     <servers />
   </component>
@@ -72,9 +72,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="553" y="282" width="670" height="676" key="search.everywhere.popup" timestamp="1609196047258">
+    <state x="545" y="297" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1636048526966">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="553" y="282" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1609196047258" />
+    <state x="545" y="297" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1636048526966" />
   </component>
 </project>

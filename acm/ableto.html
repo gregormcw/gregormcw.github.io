@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name ="author" content="Gregor McWilliam">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment VIII</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="title">AbleTo</div>
+
+<div class="row">
+
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class= "noisebox">
+			<div class="noisebox-title" id="drums">Drums</div>
+			
+			<button id="play-button" onclick="play(audioFile0);">
+				<i class="fas fa-play"></i></button>
+			<button id="pause-button" onclick="pause(audioFile0);">
+				<i class="fas fa-pause"></i></button>
+			<button id="loop-button" onclick="loop(audioFile0);">
+				<i class="fas fa-infinity"></i></button>
+			<input type="range" min="0.0" max="1.0" value="0.7" id="volControl0" step="0.01">
+		</div>
+	</div>
+	
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class= "noisebox">
+			<div class="noisebox-title" id="bass">Bass</div>	
+			<button id="play-button" onclick="play(audioFile1);">
+				<i class="fas fa-play"></i></button>
+			<button id="pause-button" onclick="pause(audioFile1);">
+				<i class="fas fa-pause"></i></button>
+			<button id="loop-button" onclick="loop(audioFile1);">
+				<i class="fas fa-infinity"></i></button>
+			<input type="range" min="0.0" max="1.0" value="0.7" id="volControl1" step="0.01">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-12 col-sm-12">
+		<div class= "noisebox">
+			<div class="noisebox-title" id="keys">Keys</div>
+			<button id="play-button" onclick="play(audioFile2);">
+				<i class="fas fa-play"></i></button>
+			<button id="pause-button" onclick="pause(audioFile2);">
+				<i class="fas fa-pause"></i></button>
+			<button id="loop-button" onclick="loop(audioFile2);">
+				<i class="fas fa-infinity"></i></button>
+			<input type="range" min="0.0" max="1.0" value="0.7" id="volControl2" step="0.01">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-12 col-sm-12">
+		<div class= "noisebox">
+			<div class="noisebox-title" id="vocals">Vocals</div>
+			<button id="play-button" onclick="play(audioFile3);">
+				<i class="fas fa-play"></i></button>
+			<button id="pause-button" onclick="pause(audioFile3);">
+				<i class="fas fa-pause"></i></button>
+			<button id="loop-button" onclick="loop(audioFile3);">
+				<i class="fas fa-infinity"></i></button>
+			<input type="range" min="0.0" max="1.0" value="0.7" id="volControl3" step="0.01">
+		</div>
+	</div>
+</div>
+
+<script>
+
+// Create Audio object
+audioFile0 = new Audio('./audio/drums_all_16b.wav');
+
+audioFile1 = new Audio('./audio/808_16b.wav');
+
+audioFile2 = new Audio('./audio/piano_16b.wav');
+
+audioFile3 = new Audio('./audio/vox_samp_16b.wav');
+
+// Create slider value variable
+var volControl0 = document.getElementById("volControl0");
+var volControl1 = document.getElementById("volControl1");
+var volControl2 = document.getElementById("volControl2");
+var volControl3 = document.getElementById("volControl3");
+
+// Function to play audio file from current position
+function play(audioFile) {
+	audioFile.play();
+}
+
+// Function to pause audio file
+function pause(audioFile) {
+	audioFile.pause();
+}
+
+// Function to change loop state of audio file
+function loop(audioFile) {
+	if (audioFile.loop == false) {
+		audioFile.loop = true;
+	}
+	else {
+		audioFile.loop = false;
+	}
+}
+
+// Function to control volume. Called when user interacts with slider
+volControl0.oninput = function setVol() {
+	console.log(this.value);
+	audioFile0.volume = this.value;
+}
+
+volControl1.oninput = function setVol() {
+	console.log(this.value);
+	audioFile1.volume = this.value;
+}
+
+volControl2.oninput = function setVol() {
+	console.log(this.value);
+	audioFile2.volume = this.value;
+}
+
+volControl3.oninput = function setVol() {
+	console.log(this.value);
+	audioFile3.volume = this.value;
+}
+
+// function setVol(audioFile)
+
+</script>
+
+</body>
+</html>
