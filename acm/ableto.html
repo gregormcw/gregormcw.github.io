@@ -69,6 +69,20 @@
 	</div>
 </div>
 
+	<div class="col-lg-4 col-md-12 col-sm-12">
+		<div class= "noisebox">
+			<div class="noisebox-title" id="come-with-me">CwM</div>
+			<button id="play-button" onclick="play(audioFile4);">
+				<i class="fas fa-play"></i></button>
+			<button id="pause-button" onclick="pause(audioFile4);">
+				<i class="fas fa-pause"></i></button>
+			<button id="loop-button" onclick="loop(audioFile4);">
+				<i class="fas fa-infinity"></i></button>
+			<input type="range" min="0.0" max="1.0" value="0.7" id="volControl4" step="0.01">
+		</div>
+	</div>
+</div>
+
 <script>
 
 // Create Audio object
@@ -80,11 +94,14 @@ audioFile2 = new Audio('./audio/piano_16b.wav');
 
 audioFile3 = new Audio('./audio/vox_samp_16b.wav');
 
+audioFile4 = new Audio('./audio/come_with_me.wav');
+
 // Create slider value variable
 var volControl0 = document.getElementById("volControl0");
 var volControl1 = document.getElementById("volControl1");
 var volControl2 = document.getElementById("volControl2");
 var volControl3 = document.getElementById("volControl3");
+var volControl3 = document.getElementById("volControl4");
 
 // Function to play audio file from current position
 function play(audioFile) {
