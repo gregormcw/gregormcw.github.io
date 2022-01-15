@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ea9f70e5-3ada-4a25-a998-dadf0ce4699d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acm/audio/come_with_me.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/acm/audio/come_with_me.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +69,8 @@
       <workItem from="1636048508918" duration="67000" />
       <workItem from="1636048701132" duration="33000" />
       <workItem from="1636552435810" duration="1974000" />
+      <workItem from="1636563603710" duration="418000" />
+      <workItem from="1642274488040" duration="557000" />
     </task>
     <servers />
   </component>
